@@ -1,0 +1,7 @@
+import { adminDeleteMemo } from "@/lib/memoHandlers";
+
+export const runtime = "nodejs";
+
+export function POST(request: Request) {
+  return adminDeleteMemo(request);
+}
